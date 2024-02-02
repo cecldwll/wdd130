@@ -1,11 +1,61 @@
+
 body {
     background-color: #8D9D83;
+    margin: 0;
+    padding: 0;
 }
+
+#content {
+  max-width: 1600; 
+  margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_link {
+    padding: 20px;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+main {
+    background-color: #8D9D83;
+    padding: 40px;
+}
+
 a {
     padding: 10px;
     color: black;
-    font-size: 1em
+    font-size: 1em;
 }
+
 img {
-    width: 200px;
+    width: 20%;
+}
+
+a {
+    color: black;
+}
+
+nav a:hover {
+    color: darkgreen;
+    background-color: rgb(191, 201, 174);
+}
+
+#main_title {
+    font-size:3em;
+    text-align: center; 
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
 }
