@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
 
 body {
     background-color: #8D9D83;
     margin: 0;
     padding: 0;
+    font-family: "Spectral" ,"Song Myung", Garamond;
 }
 
 #content {
@@ -24,17 +27,13 @@ nav {
 
 main {
     background-color: #8D9D83;
-    padding: 40px;
+    padding: 10px;
 }
 
 a {
     padding: 10px;
     color: black;
     font-size: 1em;
-}
-
-img {
-    width: 20%;
 }
 
 a {
@@ -52,10 +51,26 @@ nav a:hover {
 }
 
 img {
+    width: 20%;
     display: block;
     margin: 0 auto;
 }
 
 p {
+    width: 60%;
+    margin: 50px auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#bio{
+    padding: 35px;
+    background-color: rgb(191, 201, 174);
+    border: 2px solid darkgreen;
+    color: black;
+    border-radius: 15px;
+}
+
+footer {
     text-align: center;
 }
