@@ -36,10 +36,6 @@ a {
     font-size: 1em;
 }
 
-a {
-    color: black;
-}
-
 nav a:hover {
     color: darkgreen;
     background-color: rgb(191, 201, 174);
