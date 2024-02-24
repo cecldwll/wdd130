@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beach Animation</title>
+    <style>
+      #content {
+        display: grid;
+        grid-template-columns: 1300px;
+        justify-content: center;
+        /* align-items: baseline; */
+      }
+      #beach,
+      #palm {
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      #palm {
+        z-index: 2;
+      }
+      #beach {
+        margin: 0 auto;
+      }
+      #ball,
+      #crab {
+        width: 80px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      #ball {
+        margin: 580px auto;
+        z-index: 1;
+      }
+      #crab {
+        margin-top: 650px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <img id="beach" src="images/beach.jpg" alt="beach landscape" />
+      <img id="palm" src="images/palms.png" alt="palm fronds" />
+      <img id="crab" src="images/crab.png" alt="crab" />
+      <img id="ball" src="images/ball.png" alt="beach ball" />
+    </div>
+    <script>
+      // The code below will not be changed
+      // Palms coming forward and fading
+      const palm = document.querySelector("#palm");
+      const grow_fade = [
+        { transform: "translate(0, 10%) scale(1)", opacity: "1" },
+        { transform: "translate(-10%, 20%) scale(2)", opacity: ".5" },
+        { transform: "translate(-40%, 40%) scale(3)", opacity: ".5" },
+        { transform: "translate(-50%, 60%) scale(4)", opacity: "0" },
+      ];
+      const grow_fade_options = {
+        duration: 2500,
+        fill: "both",
+        easing: "linear",
+      };
+      palm.animate(grow_fade, grow_fade_options);
+      // Beach coming forward slightly
+      const beach = document.querySelector("#beach");
+      const grow = [{ transform: "scale(1)" }, { transform: "scale(1.3)" }];
+      const grow_options = {
+        duration: 2500,
+        fill: "both",
+        easing: "linear",
+      };
+      beach.animate(grow, grow_options);
+      beach.style.position = "fixed";
+      const ball = document.querySelector("#ball");
+      const crab = document.querySelector("#crab");
+      //ball.addEventListener('click', animate_ball);
+
+      // const up = [
+      // {transform: 'translateY(0) rotateZ(0deg)'},
+      // {transform: 'translateY(-400%) rotateZ(180deg)'}
+      // ]
+      // const up_options = {
+      // duration: 2000,
+      // iterations: 2,
+      // direction: 'alternate',
+      // easing: 'ease-in-out'
+      // };
+      // const animate_ball = ball.animate(up, up_options);
+      const animate_crab = crab
+        .animate(
+          [
+            {
+              transform: "translateX(0)",
+            },
+            {
+              transform: "translateX(610px)",
+            },
+          ],
+          {
+            fill: "both",
+            duration: 2500,
+          }
+        )
+        .finished.then(() => {
+          const animate_ball_intro = ball.animate(
+            [
+              {
+                transform: "rotateZ(0)",
+              },
+              {
+                transform: "rotateZ(-360deg)",
+              },
+            ],
+            {
+              fill: "both",
+              duration: 1000,
+              //iterations: Infinity
+            }
+          );
+          palm.style.visibility = "hidden";
+        });
+      //Where the girls will edit:
+
+      // The code below can be edited
+
+      function startAnimation() {
+        ball.animate(
+          [
+            {
+              transform: "translateY(0) rotate(0deg)",
+            },
+            {
+              transform: "translateY(-400%) rotate(180deg)",
+            },
+          ],
+          {
+            duration: 1000,
+            iterations: 2,
+            direction: "alternate",
+            easing: "ease-in-out",
+          }
+        );
+      }
+      ball.addEventListener("click", startAnimation);
+      //ball.addEventListener("mousedown", startAnimation);
+      //ball.addEventListener("touchstart", startAnimation);
+    </script>
+  </body>
+</html>
