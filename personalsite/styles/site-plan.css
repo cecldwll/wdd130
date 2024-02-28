@@ -16,7 +16,7 @@ Fonts are separated by a | */
   --accent3-color: #C0DFA1;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: Against;
+  --heading-font: Against, Garamond, 'Times New Roman';
   --paragraph-font: 'Old Standard TT', Garamond, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
