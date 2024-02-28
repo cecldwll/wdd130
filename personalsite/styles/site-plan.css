@@ -4,7 +4,7 @@ Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 @font-face {
   font-family: Against;
-  src: url(against_regular.ttf);
+  src: url(against_regular.ttf) format('truetype');
 }
 
 :root {
