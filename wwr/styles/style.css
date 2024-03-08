@@ -43,7 +43,7 @@ footer {
     background-color: #FCE172;
     color: #134266;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -236,20 +236,19 @@ footer .social img {
 
 .container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     grid-column: 2/3;
+    text-align: center;
 }
 
 .contact-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-top: 100px;
 }
 
 .contact-info{
     grid-column: 1/2;
+    text-align: center;
 }
 
 .contact-info h1{
