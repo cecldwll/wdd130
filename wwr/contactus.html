@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater Rafting Vacations | Dry Oar Boating | Contacts </title>
+    <title>Whitewater Rafting Vacations | Dry Oar Boating | Contact </title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
                 <a href="index.html">Home</a>
                 <!-- <a href="#">Page 2</a> -->
                 <a href="site-plan-rafting.html">Site Plan</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
         <main class="contact-grid">
@@ -33,6 +33,27 @@
             <div class="container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28771.98404583368!2d-112.08987466863617!3d35.709317039182494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8732ef8c9646c959%3A0xebb983322f0387be!2s4117%20Red%20Butte%20Rd%2C%20Williams%2C%20AZ%2086046!5e0!3m2!1sen!2sus!4v1709858417309!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                  <li>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="user_name" />
+                  </li>
+                  <li>
+                    <label for="mail">Email: </label>
+                    <input type="email" id="mail" name="user_email" />
+                  </li>
+                  <li>
+                    <label for="msg">Message: </label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                  <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+                  
+                </ul>
+              </form>
         </main>
         <footer>
             <p>Dry Oar &copy; 2024 - Caitlyn Caldwell</p>
@@ -50,5 +71,22 @@
             </div>
         </footer>
     </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>
