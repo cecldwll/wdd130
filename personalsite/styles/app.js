@@ -6,10 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Wait for the fade-out animation to finish before setting display to 'none'
         setTimeout(() => {
             loadingScreen.style.display = 'none';
-        }, 2000); // Match this with your animation duration
+        }, 2000); // Match this with animation duration
     }, 3000); // Time until the fade-out starts
 
-    // Rest of your script...
 });
 
 

@@ -32,7 +32,6 @@ span {
     font-family: Against;
 }
 
-
 .logo {
     width: 200px; /* Adjust the size of the logo as needed */
     height: auto;
@@ -81,12 +80,12 @@ section {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgb(0, 0, 0) 100%);
 }
 
-a {
+.container a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-h1 {
+.container h1 {
     display: flex;
     justify-content: flex-start;
     width: 100%;
