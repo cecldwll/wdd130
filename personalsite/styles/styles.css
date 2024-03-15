@@ -28,7 +28,7 @@ span {
     justify-content: center;
     align-items: center;
     z-index: 9999; /* Ensure it sits on top of other content */
-    font-size: 24px; /* Adjust as needed */
+    font-size: 30px; /* Adjust as needed */
     font-family: Against;
 }
 
@@ -122,4 +122,14 @@ h1 {
     }
 }
 
+/* Fade out animation */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Apply the animation to the loading screen */
+#loading-screen.fade-out {
+    animation: fadeOut 1s ease forwards; /* 'forwards' keeps the element in the final state of the animation */
+}
 

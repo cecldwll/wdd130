@@ -1,10 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        document.getElementById('loading-screen').style.display = 'none';
-    }, 5000); // Hide the loading screen after 5 seconds
+        const loadingScreen = document.getElementById('loading-screen');
+        loadingScreen.classList.add('fade-out');
+        
+        // Wait for the fade-out animation to finish before setting display to 'none'
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 1000); // Match this with your animation duration
+    }, 3000); // Time until the fade-out starts
 
-    // Rest of your existing script...
+    // Rest of your script...
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const parentBgE1 = document.querySelector('.bg');
