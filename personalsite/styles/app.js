@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.getElementById('loading-screen').style.display = 'none';
+    }, 5000); // Hide the loading screen after 5 seconds
+
+    // Rest of your existing script...
+});
+
+document.addEventListener('DOMContentLoaded', () => {
     const parentBgE1 = document.querySelector('.bg');
     const homeLink = document.querySelector('.container .text a:first-child');
     const homeSpan = homeLink.querySelector('span');
