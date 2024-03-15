@@ -130,6 +130,6 @@ h1 {
 
 /* Apply the animation to the loading screen */
 #loading-screen.fade-out {
-    animation: fadeOut 1s ease forwards; /* 'forwards' keeps the element in the final state of the animation */
+    animation: fadeOut 2s ease forwards; /* 'forwards' keeps the element in the final state of the animation */
 }
 
