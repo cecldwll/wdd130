@@ -78,6 +78,7 @@ section {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.589);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgb(0, 0, 0) 100%);
 }
 
 a {
@@ -110,6 +111,14 @@ h1 {
     transform: scale(1); /* Start with no scale */
     transition: opacity 1s ease, transform 1s ease; /* Transition for smooth effect */
 }
+
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: 'DM Serif Display';
+}
+
 
 @keyframes anima {
     0% {
