@@ -267,6 +267,7 @@ img {
         display: block;
         height: auto;
         padding-bottom: 50px;
+        padding-top: 100px;
     }
     .home-1, .home-2, .home-3 {
         width: 60%;
