@@ -31,6 +31,10 @@ span {
     font-weight: 500;
 }
 
+body {
+    background-color: black;
+}
+
 #loading-screen {
     position: fixed; /* Or 'absolute', if 'fixed' doesn't work well in your context */
     top: 0;
@@ -267,7 +271,6 @@ img {
         display: block;
         height: auto;
         padding-bottom: 50px;
-        padding-top: 100px;
     }
     .home-1, .home-2, .home-3 {
         width: 60%;
