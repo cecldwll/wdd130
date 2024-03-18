@@ -132,7 +132,6 @@ body {
 
 
 footer {
-    background-color: black;
     color: white;
     padding: 60px 0 25px 60px;
     display: flex;
@@ -178,7 +177,6 @@ footer a {
     display: grid;
     grid-template-columns: repeat(17, 1fr);
     grid-template-rows: repeat(11, 9.09090909091vh);
-    background-color: black;
 }
 
 img {
