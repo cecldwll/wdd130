@@ -266,9 +266,10 @@ nav {
 .nav_link {
     padding: 20px 30px 20px 30px;
     font-size: 1em;
+    letter-spacing: 0.5ch;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: --var(--heading-font);
+    font-family: var(--heading-font);
     color: whitesmoke;
     text-align: center;
 }
@@ -303,9 +304,37 @@ nav a:hover {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
+    display: block;
 }
   
+.really-awesome-container1, .really-awesome-container2, .really-awesome-container3, .really-awesome-container4, .really-awesome-container5, .really-awesome-container6, 
+.really-awesome-container7, .really-awesome-container8, .really-awesome-container9, .really-awesome-container10, .really-awesome-container11, .really-awesome-container12, 
+.really-awesome-container13, .really-awesome-container14, .really-awesome-container15, .really-awesome-container16, .really-awesome-container17 {
+    position: relative;
+}
 
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: var(--primary-color);
+    background: rgba(1, 25, 54, 0.6);
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .10s ease;
+    opacity: 0;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+.really-awesome-container1:hover .overlay, .really-awesome-container2:hover .overlay, .really-awesome-container3:hover .overlay, .really-awesome-container4:hover .overlay, 
+.really-awesome-container5:hover .overlay, .really-awesome-container6:hover .overlay, .really-awesome-container7:hover .overlay, .really-awesome-container8:hover .overlay, 
+.really-awesome-container9:hover .overlay, .really-awesome-container10:hover .overlay, .really-awesome-container11:hover .overlay, .really-awesome-container12:hover .overlay, 
+.really-awesome-container13:hover .overlay, .really-awesome-container14:hover .overlay, .really-awesome-container15:hover .overlay, .really-awesome-container16:hover .overlay, 
+.really-awesome-container17:hover .overlay {
+    opacity: 1;
+  }
 
 
 
