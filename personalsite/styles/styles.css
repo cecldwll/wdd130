@@ -351,14 +351,10 @@ nav a:hover {
     position: relative;
 }
 
-.homunculus1:hover .overlay, .homunculus2:hover .overlay, .homunculus3:hover .overlay, .homunculus4:hover .overlay, .homunculus5:hover .overlay, .homunculus6:hover .overlay, 
-.homunculus7:hover .overlay, .homunculus8:hover .overlay, .homunculus9:hover .overlay, .homunculus10:hover .overlay, 
-.homunculus11:hover .overlay, .homunculus12:hover .overlay, .homunculus13:hover .overlay, .homunculus14:hover .overlay, .homunculus15:hover .overlay, .homunculus16:hover .overlay, 
-.homunculus17:hover .overlay, .homunculus18:hover .overlay, .homunculus19:hover .overlay, .homunculus20:hover .overlay, 
-.homunculus21:hover .overlay, .homunculus22:hover .overlay, .homunculus23:hover .overlay, .homunculus24:hover .overlay, .homunculus25:hover .overlay, .homunculus26:hover .overlay, 
-.homunculus27:hover .overlay, .homunculus28:hover .overlay, .homunculus29:hover .overlay, .homunculus30:hover .overlay,
-.homunculus31:hover .overlay, .homunculus32:hover .overlay, .homunculus33:hover .overlay, .homunculus34:hover .overlay, .homunculus35:hover .overlay, .homunculus36:hover .overlay, 
-.homunculus37:hover .overlay, .homunculus38:hover .overlay, .homunculus39:hover .overlay, .homunculus40:hover .overlay {
+.homunculus1:hover .overlay, .homunculus2:hover .overlay, .homunculus3:hover .overlay, .homunculus4:hover .overlay, .homunculus5:hover .overlay, .homunculus6:hover .overlay, .homunculus7:hover .overlay, .homunculus8:hover .overlay, .homunculus9:hover .overlay, .homunculus10:hover .overlay, 
+.homunculus11:hover .overlay, .homunculus12:hover .overlay, .homunculus13:hover .overlay, .homunculus14:hover .overlay, .homunculus15:hover .overlay, .homunculus16:hover .overlay, .homunculus17:hover .overlay, .homunculus18:hover .overlay, .homunculus19:hover .overlay, .homunculus20:hover .overlay, 
+.homunculus21:hover .overlay, .homunculus22:hover .overlay, .homunculus23:hover .overlay, .homunculus24:hover .overlay, .homunculus25:hover .overlay, .homunculus26:hover .overlay, .homunculus27:hover .overlay, .homunculus28:hover .overlay, .homunculus29:hover .overlay, .homunculus30:hover .overlay,
+.homunculus31:hover .overlay, .homunculus32:hover .overlay, .homunculus33:hover .overlay, .homunculus34:hover .overlay, .homunculus35:hover .overlay, .homunculus36:hover .overlay, .homunculus37:hover .overlay, .homunculus38:hover .overlay, .homunculus39:hover .overlay, .homunculus40:hover .overlay {
     opacity: 1;
 }
 
