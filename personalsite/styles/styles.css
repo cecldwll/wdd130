@@ -133,7 +133,7 @@ body {
 
 footer {
     color: white;
-    padding: 60px 0 25px 60px;
+    padding: 60px 0 25px 5%;
     display: flex;
     align-items: center;
 }
@@ -410,7 +410,7 @@ nav a:hover {
       }
 
     .footer p {
-        font-size: .7em;
+        font-size: .5em;
     }
 
 }
