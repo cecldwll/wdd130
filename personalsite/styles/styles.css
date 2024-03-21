@@ -366,7 +366,7 @@ nav a:hover {
 
 
 
-@media only screen and (min-width: 1px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .container h1, .container h1 a, .container h1 span {
         display: block; 
         width: 100%; 
@@ -396,7 +396,7 @@ nav a:hover {
     }
 
     .nav-hr {
-        margin: 15px 215%;
+        margin: 15px auto;
         
     }
 
