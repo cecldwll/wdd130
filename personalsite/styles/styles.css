@@ -36,7 +36,7 @@ body {
 }
 
 #loading-screen {
-    position: fixed; /* Or 'absolute', if 'fixed' doesn't work well in your context */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -46,13 +46,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Ensure it sits on top of other content */
-    font-size: 35px; /* Adjust as needed */
+    z-index: 9999; 
+    font-size: 35px; 
     font-family: var(--title-font);
 }
 
 .home_logo {
-    width: 200px; /* Adjust the size of the logo as needed */
+    width: 200px;
     height: auto;
     margin-left: -55px;
     margin-bottom: 20px;
